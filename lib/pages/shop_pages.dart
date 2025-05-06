@@ -33,21 +33,30 @@ class _ShopPageState extends State<ShopPage> {
         children: [
           // search bar
           Container(
-            padding: const EdgeInsets.all(12),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             margin: const EdgeInsets.symmetric(horizontal: 25),
             decoration: BoxDecoration(
               color: Colors.grey[200],
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: Colors.grey[300]!,
+                width: 1,
+              ),
             ),
             child: Row(
               children: [
-                Text(
-                  'Search',
-                  style: TextStyle(color: Colors.grey),
-                ),
                 Icon(
                   Icons.search,
-                  color: Colors.grey,
+                  color: Colors.grey[600],
+                  size: 20,
+                ),
+                const SizedBox(width: 12),
+                Text(
+                  'Search',
+                  style: TextStyle(
+                    color: Colors.grey[600],
+                    fontSize: 16,
+                  ),
                 ),
               ],
             )
@@ -55,7 +64,7 @@ class _ShopPageState extends State<ShopPage> {
 
           // message
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 25.0),
+            padding: const EdgeInsets.symmetric(vertical: 50.0),
             child: Text(
               'eveyone flies... some fly longer than others',
               style: TextStyle(
@@ -103,9 +112,7 @@ class _ShopPageState extends State<ShopPage> {
                 // return the shoe 
                 return ShoeTile(
                   shoe: shoe,
-                  onTap: () => {
-                    addShoeToCart(shoe),
-                  }
+                  onTap: () => addShoeToCart(shoe),
                 );
               },
             ),

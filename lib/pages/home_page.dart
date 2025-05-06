@@ -68,7 +68,6 @@ class _HomePageState extends State<HomePage> {
                 DrawerHeader(
                   child: Image.asset(
                     'lib/images/logo.webp',
-                    color: Colors.white,
                     ),
                   ),
 

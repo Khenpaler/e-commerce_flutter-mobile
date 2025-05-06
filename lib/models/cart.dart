@@ -5,28 +5,28 @@ class Cart extends ChangeNotifier {
   // list of shoes for sale
   List<Shoe> shoeShop = [
     Shoe(
-      name: 'Air Force 1 (White)',
+      name: 'Air Force 1 (Blue)',
       price: '100',
-      imagePath: 'assets/images/white.avif',
-      description: 'White Air Force 1',
+      imagePath: 'lib/images/blue.png',
+      description: 'Blue Air Force 1',
     ),
     Shoe(
-      name: 'Air Force 1 (Black)',
+      name: 'Air Force 1 (Green)',
       price: '100',
-      imagePath: 'assets/images/black.avif',
-      description: 'Black Air Force 1',
+      imagePath: 'lib/images/green.png',
+      description: 'Green Air Force 1',
     ),
     Shoe(
       name: 'Air Force 1 (Pink)',
       price: '100',
-      imagePath: 'assets/images/pink.png',
+      imagePath: 'lib/images/pink.png',
       description: 'Pink Air Force 1',
     ),
     Shoe(
-      name: 'Air Force 1 (Black and White)',
+      name: 'Air Force 1 (White)',
       price: '100',
-      imagePath: 'assets/images/black_white.png',
-      description: 'Black and White Air Force 1',
+      imagePath: 'lib/images/white.png',
+      description: 'White Air Force 1',
     ),
   ];
 
